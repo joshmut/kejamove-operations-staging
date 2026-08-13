@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.kejamove.crm",
+      "sha256_cert_fingerprints": [
+        "FC:A5:C2:09:CF:BF:1F:A1:51:70:ED:C1:58:4D:74:0B:04:0D:3B:3B:37:4A:5C:67:7E:E9:3C:ED:D7:E2:FD:81"
+      ]
+    }
+  }
+]

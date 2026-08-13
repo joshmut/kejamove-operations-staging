@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FF5722" />
+    <title>KejaMove CRM</title>
+    <meta name="description" content="KejaMove operations, leads, jobs and WhatsApp inbox in one place." />
+    <meta name="author" content="KejaMove" />
+
+    <link rel="icon" href="/kejamove-operations-staging/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/kejamove-operations-staging/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="KejaMove" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta property="og:title" content="KejaMove CRM" />
+    <meta property="og:description" content="KejaMove operations, leads, jobs and WhatsApp inbox in one place." />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="/kejamove-operations-staging/assets/index-oZ84nmyX.js"></script>
+    <link rel="stylesheet" crossorigin href="/kejamove-operations-staging/assets/index-Cb2dih2r.css">
+  <link rel="manifest" href="/kejamove-operations-staging/manifest.webmanifest"></head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Capture PWA install/lifecycle events as early as possible, before
+      // the React bundle parses. PWAContext consumes these on mount.
+      (function () {
+        window.__pwa = window.__pwa || { deferredPrompt: null, installed: false, listeners: [] };
+        window.addEventListener('beforeinstallprompt', function (e) {
+          e.preventDefault();
+          window.__pwa.deferredPrompt = e;
+          (window.__pwa.listeners || []).forEach(function (fn) { try { fn('available'); } catch (_) {} });
+        });
+        window.addEventListener('appinstalled', function () {
+          window.__pwa.installed = true;
+          window.__pwa.deferredPrompt = null;
+          (window.__pwa.listeners || []).forEach(function (fn) { try { fn('installed'); } catch (_) {} });
+        });
+      })();
+    </script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>
