@@ -1,1 +1,0 @@
-import{az as r,aA as e}from"./index-BcL_U-3U.js";function n(s,t){const a=r(s);return isNaN(t)?e(s,NaN):(t&&a.setDate(a.getDate()+t),a)}function u(s){const t=r(s);return t.setDate(1),t.setHours(0,0,0,0),t}function c(s,t){return n(s,-t)}export{n as a,c as b,u as s};
